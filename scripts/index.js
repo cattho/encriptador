@@ -6,6 +6,7 @@ const textareaTwo = document.getElementById('secondTextarea');
 
 
 const hideShowContent = () => {
+    textareaTwo.style.display='block'
     divcopyButton.style.display = 'flex';
     imagenDiv.style.display = 'none';
 };

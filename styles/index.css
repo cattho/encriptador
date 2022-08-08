@@ -1,4 +1,6 @@
-/* paleta de colores */
+@import '/styles/responsive.css';
+
+/* paleta de colores / color palette */
 :root {
     --background: #D8DFE8;
     --blue: #0A3871;
@@ -6,7 +8,6 @@
     --black: #000000;
     --white: #FFFFFF;
 }
-
 
 body {
     margin: 0;
@@ -16,34 +17,27 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.container {
-    display: flex;
-}
-
 .logoContainer {
-    position: absolute;
-    padding: 0px;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 5px;
+    height: 60px;
+    padding: 15px 40px;
 }
 
 .logo {
-    position: relative;
-    top: 30px;
     font-size: 4rem;
     color: var(--blue);
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
 .text {
-    position: absolute;
     width: 900px;
     height: 750px;
-    left: 240px;
-    top: 110px;
     font-style: normal;
-    /* border: 1px solid red; */
 }
 
 .formulario {
@@ -118,25 +112,20 @@ body {
 .rectangle {
     display: flex;
     align-items: center;
-    position: absolute;
-    width: 400px;
+    width: 410px;
     height: 800px;
-    left: 1200px;
-    top: 40px;
     background-color: var(--white);
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
 .munheco {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     padding: 30px;
 }
 
 .buttonImagen {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -151,6 +140,7 @@ body {
     width: 80%;
     height: 500px;
     resize: none;
+    display: none;
 }
 
 .copyButton {
@@ -165,4 +155,46 @@ body {
     justify-content: center;
     cursor: pointer;
     display: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+}
+
+@media (max-width:768px) {
+    .logoContainer {
+        height: 30px;
+        padding: 15px 40px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .text {
+        width: 80%;
+        height: 400px;
+        position: relative;
+        font-style: normal;
+    }
+
+    .rectangle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 400px;
+    }
+
+    .munheco img {
+        display: none;
+    }
+
+    .seconTextarea {
+        margin: 10px 0;
+        width: 80%;
+        height: 300px;
+    }
 }
