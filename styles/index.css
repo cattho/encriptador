@@ -1,0 +1,168 @@
+/* paleta de colores */
+:root {
+    --background: #D8DFE8;
+    --blue: #0A3871;
+    --gray: #D8DFE8;
+    --black: #000000;
+    --white: #FFFFFF;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.logoContainer {
+    position: absolute;
+    padding: 0px;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 5px;
+}
+
+.logo {
+    position: relative;
+    top: 30px;
+    font-size: 4rem;
+    color: var(--blue);
+}
+
+.text {
+    position: absolute;
+    width: 900px;
+    height: 750px;
+    left: 240px;
+    top: 110px;
+    font-style: normal;
+    /* border: 1px solid red; */
+}
+
+.formulario {
+    height: 100%;
+}
+
+.maintextarea {
+    border: none;
+    width: 100%;
+    height: 80%;
+    background: var(--background);
+    color: var(--blue);
+    resize: none;
+    font-size: 2rem;
+}
+
+.maintextarea::-webkit-input-placeholder {
+    color: var(--blue);
+    font-size: 2rem;
+}
+
+.maintextarea:focus,
+.seconTextarea:focus {
+    outline: none !important;
+}
+
+.conditionalWords {
+    display: flex;
+    padding-left: 110px;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.encriptar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid var(--blue);
+    border-radius: 24px;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.desencriptar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 328px;
+    height: 67px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 24px;
+    background-color: var(--gray);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    cursor: pointer;
+}
+
+.rectangle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    height: 800px;
+    left: 1200px;
+    top: 40px;
+    background-color: var(--white);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.munheco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.buttonImagen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+.seconTextarea {
+    border: none;
+    width: 80%;
+    height: 500px;
+    resize: none;
+}
+
+.copyButton {
+    width: 336px;
+    height: 67px;
+    font-weight: 400;
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+}
