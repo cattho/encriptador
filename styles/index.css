@@ -201,11 +201,7 @@ footer {
     }
 
     .encriptar,
-    .desencriptar {
-        width: 15em;
-        height: 3em;
-    }
-
+    .desencriptar,
     .copyButton {
         width: 15em;
         height: 3em;
